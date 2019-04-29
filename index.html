@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mario Pest Control</title>
+	<link rel='stylesheet' href='styles.css' />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+</head>
+
+<body>
+	<header class='header'>
+		<h1 class="logo">MARIO PEST CONTROL</h1>
+	</header>
+	<main>
+		<div class='baddies'>
+			<div class='goom baddie'>
+				<h2>Goombas</h2>
+				<img src="img/Goomba_-_MarioPartyStarRush.png">
+				<h3>Cost: 5 coins</h3>
+				<h3>How many caught?</h3>
+				<input id='goomsCaught' name='badGuy' type='number'>
+				<br />
+			</div>
+			<div class='bomb baddie'>
+				<h2>Bob-ombs</h2>
+				<br />
+				<img src='img/Bobomb_-_MarioPartyStarRush.png'>
+				<h3>Cost: 7 coins</h3>
+				<h3>How many caught?</h3>				
+				<input id="bobsCaught" name='badGuy' type='number'>
+				<br />
+			</div>
+			<div class='cheep baddie'>
+				<h2>Cheep-Cheeps</h2>
+				<img src='img/CheepCheepNSMBU.png'>
+				<h3>Cost: 11 coins</h3>
+				<h3>How many caught?</h3>
+				<input id='cheepsCaught' name='badGuy' type='number'>
+				<br />
+			</div>
+			<div class='total baddie'>
+				<h2>Total Owed</h2>
+				<img src='img/CoinMK8.png'>
+				<br />
+				<input type='button' id='submitTotal' value='Calculate Pay'>
+				<h2 id='total'>Pay mario!</h2>
+				<br />
+			</div>
+
+		</div>
+
+	</main>
+	<footer class='footer'>
+		<a href='mailto: Mario@noa.nintendo.com'>E-mail mario</a>
+		<br />
+		<a href='https://www.MarioFindsBugs.com'>Mario Pest Control - Website </a>
+		<br />
+		<span class='address'>701 Mushroom Lane, Mushroom Kingdom 98453</span> 
+	</footer>
+	<script src='app.js'></script>
+</body>
+
+</html>

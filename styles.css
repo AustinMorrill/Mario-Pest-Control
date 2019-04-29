@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	margin: 0pt;
+}
+
+body {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 90px auto 75px;
+	grid-gap: 1em .5em;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	height: 100%;
+	background: rgb(235, 235, 235);
+	/* background: rgb(18, 124, 34, .6); */
+	/* background: linear-gradient(to bottom, #DBFCFF, #127C22, #5D94FB, #FFBAAA, #CC4B09); */
+	/* background: linear-gradient(to bottom, #DBFCFF, #127C22); */
+}
+
+.logo {
+	font-size: 3em;
+	text-align: center;
+	color: rgb(51, 122, 255);
+	text-shadow: -3px 0 #CC4B09,
+		0 3px #CC4B09,
+		3px 0 #CC4B09,
+		0 -3px #CC4B09;
+}
+
+a {
+	color: rgb(255, 134, 73);
+}
+
+a:hover {
+	color: rgb(255, 116, 46);
+}
+
+.header {
+	padding-left: 1em;
+	background: linear-gradient(to bottom, #DBFCFF, #5D94FB);
+	box-shadow: 0px 0px 14px 0px rgb(204, 75, 9, .75);
+	border-radius: 5px;
+	margin-top: -20pt;
+	/* margin-right: 15pt;	 */
+}
+
+img {
+	height: auto;
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.baddies {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
+	height: auto;
+	width: auto;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+}
+
+.baddie {
+	margin: 5pt;
+	border: 2pt ridge black;
+	border-radius: 10pt;
+	background: linear-gradient(to bottom right, #FFBAAA, #CC4B09);
+	height: auto;
+	width: 30%;
+	text-align: center;
+}
+
+input {
+	width: 90pt;
+	margin-bottom: 10pt;
+}
+
+h2,
+p,
+input {
+	text-align: center;
+}
+
+
+header {
+	grid-column: 1 / 7;
+	justify-content: left;
+}
+
+footer {
+	grid-column: 2 / 6;
+	justify-content: center;
+	padding-left: 1em;
+	background: linear-gradient(to bottom, #DBFCFF, #5D94FB);
+	box-shadow: 0px 0px 14px 0px rgb(204, 75, 9, .75);
+	border-radius: 5px;
+	margin-right: 15pt;
+	text-align: center;
+	padding-top: 7pt;
+}
+
+main {
+	grid-column: 2 / 6;
+	background: #f07474;
+	border: 15px solid grey;
+	border-top: 5px solid gray;
+	border-bottom: 5px solid gray;
+	border-style: outset;
+	border-radius: 30px;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 90%;
+	padding: 1.5em 1.5em;
+}
+
+
+@media (max-width: 780px) {
+	main {
+		grid-column: 1 / 7;
+	}
+
+	.baddie {
+		width: 80%;
+	}
+
+	.header {
+		font-size: .8em;
+	}
+}
+
+@media (max-width: 505px) {
+	main {
+		grid-column: 1 / 7;
+	}
+
+	.header {
+		font-size: .8em;
+	}
+
+	.baddie {
+		width: 100%;
+	}
+}
